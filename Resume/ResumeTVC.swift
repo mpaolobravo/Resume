@@ -14,12 +14,15 @@ class ResumeTVC: UITableViewController {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "TimesNewRomanPS-BoldMT", size: 35)!]
+        
+    
+        
+        super.viewDidLoad()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+     
+        
+    
 
     // MARK: - Table view data source
 

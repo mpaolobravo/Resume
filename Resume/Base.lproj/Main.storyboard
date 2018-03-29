@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UCSB" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-qT-Lgd">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UCSB2" translatesAutoresizingMaskIntoConstraints="NO" id="J4p-qT-Lgd">
                                                     <rect key="frame" x="20" y="11" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -86,69 +86,62 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="248" id="h53-Dg-dcm">
-                                        <rect key="frame" x="0.0" y="169" width="768" height="248"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="268" id="h53-Dg-dcm">
+                                        <rect key="frame" x="0.0" y="169" width="768" height="268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h53-Dg-dcm" id="19S-KB-Ynt">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="247.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="267.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SchoolBulletin" translatesAutoresizingMaskIntoConstraints="NO" id="Bj8-Eu-DNW">
                                                     <rect key="frame" x="20" y="11" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School Bulletin - (Available in the Apple App Store)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-Xz-U5l">
-                                                    <rect key="frame" x="78" y="7" width="670" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- A virtual bulletin board for every school." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-2A-ncb">
-                                                    <rect key="frame" x="78" y="29" width="670" height="32"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- A virtual bulletin board for any school." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3jU-2A-ncb">
+                                                    <rect key="frame" x="78" y="33" width="670" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pV5-fg-2IF">
-                                                    <rect key="frame" x="20" y="69" width="728" height="179"/>
+                                                    <rect key="frame" x="20" y="69" width="728" height="199"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <mutableString key="text">Skills used:
+                                                    <string key="text">Skills used:
 - Xcode capabilities: iCloud and Push Notifications. (Also for getHelp())
 - CloudKit/iCloud: saving, fetching, and searching using CloudKit. (Also for getHelp())
-- Push notifications: every new post will notify user if they opt in to notifications. (Also for getHelp()) 
-- CoreLocation: Restricts location when posting. 
+- CoreLocation: Restricts location when posting. A user can only post within the college's vicinity.
 - GoogleMobileAds: Implementation of ads. (Feature removed for cleaner interface)
 - A user can request a school, and I simply enter the name of the college to CloudKit, and it will create a virtual bulletin board for that college. 
-- A user profile with name, images, and bio. No sign up needed. (Also for getHelp())
+- A user profile with their name, profile image, and bio. No sign up needed. (Also for getHelp())
 - A watch list for posts. 
--  A report button, if the post is inappropriate. </mutableString>
+- A report button, if the post is inappropriate it will automatically get deleted after five complaints. 
+- Custom color tint: The color tint of the app is the school color for the selected college.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School Bulletin - (Available in the Apple App Store)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-Xz-U5l">
+                                                    <rect key="frame" x="78" y="11" width="670" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="228" id="9OC-o8-d7g">
-                                        <rect key="frame" x="0.0" y="417" width="768" height="228"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="201" id="9OC-o8-d7g">
+                                        <rect key="frame" x="0.0" y="437" width="768" height="201"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9OC-o8-d7g" id="C4z-NM-64V">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="227.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="200.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getHelp" translatesAutoresizingMaskIntoConstraints="NO" id="hXr-Ht-zAk">
                                                     <rect key="frame" x="20" y="11" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- A help platform that uses FaceTime." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6C3-c7-Caq">
-                                                    <rect key="frame" x="78" y="36" width="670" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="getHelp() - (Available in the Apple App Store)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-kN-naG">
                                                     <rect key="frame" x="78" y="11" width="670" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,26 +150,32 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kbq-ke-fhm">
-                                                    <rect key="frame" x="20" y="69" width="728" height="150"/>
+                                                    <rect key="frame" x="20" y="69" width="728" height="130"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <string key="text">Skills used:
 - Push notifications: every new post will notify user if they opt in to notifications. (Also for School Bulletin) 
 - Clean and simple interface for users of any age. 
-- FaceTime: a user can save their FaceTime email, and if they want to FaceTime a user, it will redirect to their iPhone’ s FaceTime app. 
-- A user can start a post asking for help, and other users can reply to that post, and they can choose to let the thread starter FaceTime them. 
-- Cocoapods (For all apps)</string>
+- FaceTime: a user can save their FaceTime email to use FaceTime, it will redirect to their iPhone’s FaceTime app for video chat. 
+- A user can start a thread asking for help, and other users can reply to that post, and repliers can choose to let the thread starter FaceTime them. </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="- A help platform that uses FaceTime." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6C3-c7-Caq">
+                                                    <rect key="frame" x="78" y="35" width="670" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="211" id="3VX-1n-IzF">
-                                        <rect key="frame" x="0.0" y="645" width="768" height="211"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="213" id="3VX-1n-IzF">
+                                        <rect key="frame" x="0.0" y="638" width="768" height="213"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3VX-1n-IzF" id="A5T-1o-Z9b">
-                                            <rect key="frame" x="0.0" y="0.0" width="768" height="210.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="212.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="kyw-Rg-UEr">
@@ -198,18 +197,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rdm-ON-vuo">
-                                                    <rect key="frame" x="20" y="69" width="728" height="150"/>
+                                                    <rect key="frame" x="20" y="69" width="728" height="164"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <string key="text">Skills used:
 - Parsing JSON using SwiftyJSON to parse APIs
-- APIs used: Pixabay API, sports
+- APIs used: Pixabay API, football-data.org API
 - Core data: saving and fetching using Core data. 
-- Asynchronously fetching images from API and display it using collectionview. 
+- Asynchronously fetching images from an API, and display it using a collectionview. 
 - Pinch to zoom on images. (For all apps)
-- Fetching soccer teams and players from api, and display it using tableviews. 
-- And I’m always looking to learn new things and post it to Github. 
-</string>
+- Fetching soccer teams and players from an API, and display it using a tableview. 
+- Cocoapods (For all apps)</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -221,7 +219,7 @@
                             <tableViewSection headerTitle="Links" id="ujS-f9-9pr">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="77" id="0Qx-L0-926">
-                                        <rect key="frame" x="0.0" y="884" width="768" height="77"/>
+                                        <rect key="frame" x="0.0" y="879" width="768" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Qx-L0-926" id="8aQ-0T-6p8">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="76.5"/>
@@ -290,7 +288,7 @@
         <image name="Blank" width="128" height="128"/>
         <image name="GitHub" width="256" height="256"/>
         <image name="SchoolBulletin" width="180" height="180"/>
-        <image name="UCSB" width="128" height="128"/>
+        <image name="UCSB2" width="128" height="128"/>
         <image name="getHelp" width="1024" height="1024"/>
     </resources>
 </document>
