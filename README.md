@@ -12,8 +12,9 @@ University of California, Santa Barbara | GPA: 3.30 | Statistical Science, BS (E
 
 EXPERIENCE
 iOS Swift Developer (January 2016 - Present)
-School Bulletin - (Available in the Apple App Store)
-A virtual bulletin board for any school.
+
+* School Bulletin - (Available in the Apple App Store)
+ A virtual bulletin board for any school.
 Skills used:
 - Xcode capabilities: iCloud and Push Notifications. (Also for getHelp())
 - CloudKit/iCloud: saving, fetching, and searching using CloudKit. (Also for getHelp())
@@ -24,15 +25,17 @@ Skills used:
 - A watch list for posts. 
 - A report button, if the post is inappropriate it will automatically get deleted after five complaints. 
 - Custom color tint: The color tint of the app is the school color for the selected college.
-getHelp() - (Available in the Apple App Store)
-A help platform that uses FaceTime.
+
+* getHelp() - (Available in the Apple App Store)
+ A help platform that uses FaceTime.
 Skills used:
 - Push notifications: every new post will notify user if they opt in to notifications. (Also for School Bulletin) 
 - Clean and simple interface for users of any age. 
 - FaceTime: a user can save their FaceTime email to use FaceTime, it will redirect to their iPhone’s FaceTime app for video chat. 
 - A user can start a thread asking for help, and other users can reply to that post, and repliers can choose to let the thread starter FaceTime them. 
 AppTester - (View at GitHub)
-A demo app, where I demonstrate different iOS skills.
+
+* A demo app, where I demonstrate different iOS skills.
 Skills used:
 - Parsing JSON using SwiftyJSON to parse APIs
 - APIs used: Pixabay API, football-data.org API
